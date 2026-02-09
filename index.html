@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shift Buddy | Central BC</title>
+    <title>Ask Central BC | Local Directory</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -54,6 +54,82 @@
             font-weight: 600;
         }
         .sponsor-badge i { color: #ffc107; margin-right: 5px; } /* Gold Star */
+
+        /* LANDING SECTION - CONDENSED */
+        .landing-section {
+            background: linear-gradient(135deg, #212529 0%, #2d3436 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .landing-section h1 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin: 0 0 8px 0;
+            color: #ffc107;
+        }
+        .landing-section p {
+            font-size: 0.95rem;
+            margin: 0 0 12px 0;
+            color: #e0e0e0;
+        }
+        .how-it-works {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 12px 0;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .how-it-works-item {
+            flex: 1;
+            min-width: 100px;
+        }
+        .how-it-works-item i {
+            font-size: 1.2rem;
+            color: #ffc107;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .how-it-works-item h3 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin: 0 0 3px 0;
+        }
+        .how-it-works-item p {
+            font-size: 0.75rem;
+            margin: 0;
+            color: #e0e0e0;
+        }
+        .cta-button {
+            background-color: #ffc107;
+            color: #212529;
+            padding: 8px 24px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 0;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background-color: #e0a800;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+            color: #212529;
+        }
+        .landing-footer-note {
+            margin-top: 10px;
+            font-size: 0.7rem;
+            color: #adb5bd;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -61,11 +137,41 @@
     <nav class="navbar navbar-dark">
         <div class="container-fluid justify-content-center text-center">
             <span class="navbar-brand mb-0 h1">
-                <i class="fas fa-robot me-2"></i>SHIFT BUDDY
-                <span class="sub-brand">Powered by Central BC Directory</span>
+                <i class="fas fa-robot me-2"></i>ASK CENTRAL BC
+                <span class="sub-brand">Local Directory Chat</span>
             </span>
         </div>
     </nav>
+
+    <!-- LANDING SECTION -->
+    <div class="landing-section">
+        <h1>Find Local Services in Vanderhoof</h1>
+        <p>Chat with Ask Central BC to discover local businesses, services, and resources. Get answers instantly.</p>
+
+        <div class="how-it-works">
+            <div class="how-it-works-item">
+                <i class="fas fa-comments"></i>
+                <h3>Ask Anything</h3>
+                <p>Shops, services, restaurants, repairs — whatever you need.</p>
+            </div>
+            <div class="how-it-works-item">
+                <i class="fas fa-check-circle"></i>
+                <h3>Verified Local</h3>
+                <p>Get verified business info from trusted sources.</p>
+            </div>
+            <div class="how-it-works-item">
+                <i class="fas fa-zap"></i>
+                <h3>Fast & Simple</h3>
+                <p>Chat-based, no hassle. Get answers instantly.</p>
+            </div>
+        </div>
+
+        <p style="font-size: 1rem; font-weight: 600; margin-top: 15px; margin-bottom: 0; color: #ffc107;">Ready to find local services? Start chatting below.</p>
+
+        <div class="landing-footer-note">
+            Ask Central BC is human-verified and powered by local community data. Your community, at your fingertips.
+        </div>
+    </div>
 
     <div class="bot-wrapper">
         <!-- Placeholder Text (Positioned behind the bot) -->
