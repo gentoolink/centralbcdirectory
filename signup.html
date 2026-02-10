@@ -152,7 +152,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-dark navbar-expand-md">
         <div class="container-fluid">
             <div class="mx-auto text-center">
                 <span class="navbar-brand mb-0 h1">
@@ -160,11 +160,16 @@
                     <span class="sub-brand">Local Directory Chat</span>
                 </span>
             </div>
-            <div style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); display: flex; gap: 10px;">
-                <a href="about.html" class="btn btn-outline-warning btn-sm" style="font-weight: 600;">About</a>
-                <a href="signup.html" class="btn btn-warning btn-sm" style="font-weight: 600;">
-                    <i class="fas fa-plus me-2"></i>Sign Up Business
-                </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a href="about.html" class="btn btn-outline-warning btn-sm me-2 mt-2 mt-md-0" style="font-weight: 600;">About</a>
+                    <a href="signup.html" class="btn btn-warning btn-sm mt-2 mt-md-0" style="font-weight: 600;">
+                        <i class="fas fa-plus me-2"></i>Sign Up Business
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
