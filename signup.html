@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Your Business | Ask Central BC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { background-color: #f8f9fa; }
+        
+        .navbar { background-color: #212529; }
+        .navbar-brand { font-weight: 800; color: #ffc107 !important; letter-spacing: 1px; }
+        .sub-brand { font-size: 0.75rem; color: #adb5bd; display: block; margin-top: -5px; font-weight: 400; }
+
+        .signup-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+
+        .signup-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .signup-header h1 {
+            color: #212529;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .signup-header p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .pricing-info {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .pricing-card {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #dee2e6;
+        }
+
+        .pricing-card.free {
+            background: #f8f9fa;
+            border-color: #212529;
+        }
+
+        .pricing-card.free h3 {
+            color: #212529;
+        }
+
+        .pricing-card.partner {
+            background: linear-gradient(135deg, #212529 0%, #2d3436 100%);
+            color: white;
+            border-color: #ffc107;
+        }
+
+        .pricing-card h3 {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ffc107;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        .pricing-card li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .pricing-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ffc107;
+            font-weight: 700;
+        }
+
+        .form-wrapper {
+            border-top: 1px solid #dee2e6;
+            padding-top: 40px;
+        }
+
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #212529;
+        }
+
+        .form-title h2 {
+            font-weight: 800;
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-link a {
+            color: #212529;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .back-link a:hover {
+            color: #ffc107;
+        }
+
+        @media (max-width: 768px) {
+            .signup-container {
+                padding: 20px;
+                margin: 20px;
+            }
+
+            .pricing-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid justify-content-center text-center">
+            <span class="navbar-brand mb-0 h1">
+                <i class="fas fa-robot me-2"></i>ASK CENTRAL BC
+                <span class="sub-brand">Local Directory Chat</span>
+            </span>
+        </div>
+    </nav>
+
+    <div class="signup-container">
+        <div class="signup-header">
+            <h1>Get Your Business Listed</h1>
+            <p>Join Ask Central BC and reach more customers in Vanderhoof and Central BC.</p>
+        </div>
+
+        <div class="pricing-info">
+            <div class="pricing-card free">
+                <h3>Free Listing</h3>
+                <ul>
+                    <li>Business appears in chat</li>
+                    <li>Verified by us</li>
+                    <li>Hours & address visible</li>
+                    <li>No website link</li>
+                    <li>Standard appearance</li>
+                </ul>
+            </div>
+            <div class="pricing-card partner">
+                <h3>Sponsored Partner</h3>
+                <ul>
+                    <li>Everything in Free, plus:</li>
+                    <li>Verified Partner badge ⭐</li>
+                    <li>Website link prominent</li>
+                    <li>Featured placement</li>
+                    <li>Custom messaging</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="form-wrapper">
+            <div class="form-title">
+                <h2>Sign Up Your Business</h2>
+                <p>Fill out the form below. We'll reach out to verify your info.</p>
+            </div>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfnh9cbbHYO3Olmm3Vt2TI2paQ0gF5Rcf_7myhsa-n_1dUgUA/viewform?embedded=true" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">← Back to Ask Central BC</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
