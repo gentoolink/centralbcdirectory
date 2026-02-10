@@ -31,7 +31,7 @@
     </script>
     
     <style>
-        body { background-color: #f8f9fa; height: 100vh; display: flex; flex-direction: column; }
+        body { background-color: #f8f9fa; min-height: 100vh; display: flex; flex-direction: column; }
         
         /* THE HEADER: Dark Blue for "Industrial/Safety" feel */
         .navbar { background-color: #212529; }
@@ -40,13 +40,14 @@
 
         /* THE BOT CONTAINER: Fills the screen */
         .bot-wrapper {
-            flex-grow: 1;
+            flex: 1;
             width: 100%;
             max-width: 800px;
             margin: 0 auto;
             background: white;
             box-shadow: 0 0 15px rgba(0,0,0,0.1);
             position: relative;
+            min-height: 600px;
         }
 
         /* Desktop: Float the bot in the center with rounded corners */
